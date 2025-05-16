@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "FB9AF7B4-5DEE-481E-B663-FA278EC47538",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:GamersHub.xcodeproj",
+      "identifier" : "243D9EA92D9E8A710084A9A5",
+      "name" : "GamersHub"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:GamersHub.xcodeproj",
+        "identifier" : "2413AE722D9EFE0300889652",
+        "name" : "GamersHubUnitTests"
+      }
+    }
+  ],
+  "version" : 1
+}

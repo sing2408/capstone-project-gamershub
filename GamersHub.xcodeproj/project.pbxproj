@@ -10,6 +10,7 @@
 		241999B32DD514C6004F268E /* CorePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 241999B22DD514C6004F268E /* CorePackage */; };
 		241B20E82DD39D7B0059CF6F /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241B20E72DD39D7B0059CF6F /* Shared.framework */; };
 		241B20E92DD39D7B0059CF6F /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 241B20E72DD39D7B0059CF6F /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2424BA602DD7619400274987 /* CorePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2424BA5F2DD7619400274987 /* CorePackage */; };
 		249C00432DD4BF2C00D22F35 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 249C00422DD4BF2C00D22F35 /* Swinject */; };
 		24C6AA152DCF5564009A0D66 /* GamesFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C6AA142DCF5564009A0D66 /* GamesFoundation.framework */; };
 		24C6AA162DCF5564009A0D66 /* GamesFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24C6AA142DCF5564009A0D66 /* GamesFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -101,15 +102,11 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2413AE742D9EFE0300889652 /* GamersHubUnitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = GamersHubUnitTests;
 			sourceTree = "<group>";
 		};
 		243D9EAC2D9E8A710084A9A5 /* GamersHub */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = GamersHub;
 			sourceTree = "<group>";
 		};
@@ -120,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2424BA602DD7619400274987 /* CorePackage in Frameworks */,
 				9CE621E42871401CE6E8E681 /* Pods_GamersHubUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,9 +442,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GamersHub/Pods-GamersHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GamersHub/Pods-GamersHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,9 +463,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GamersHub-GamersHubUITests/Pods-GamersHub-GamersHubUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GamersHub-GamersHubUITests/Pods-GamersHub-GamersHubUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -544,9 +550,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GamersHubTests/Pods-GamersHubTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GamersHubTests/Pods-GamersHubTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -975,6 +985,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		241999B22DD514C6004F268E /* CorePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 241999B12DD514C6004F268E /* XCRemoteSwiftPackageReference "modularization-core-package" */;
+			productName = CorePackage;
+		};
+		2424BA5F2DD7619400274987 /* CorePackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 241999B12DD514C6004F268E /* XCRemoteSwiftPackageReference "modularization-core-package" */;
 			productName = CorePackage;
