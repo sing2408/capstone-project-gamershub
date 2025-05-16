@@ -8,6 +8,7 @@
 import Foundation
 @testable import GamersHub
 import Combine
+import CorePackage
 
 class MockGamesRepository: GamesRepositoryProtocol {
     var gamesResult: Result<([Game], PaginationInfo), Error>!

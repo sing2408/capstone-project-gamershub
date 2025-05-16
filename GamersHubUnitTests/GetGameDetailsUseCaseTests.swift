@@ -8,6 +8,7 @@
 import XCTest
 import Combine
 @testable import GamersHub
+import CorePackage
 
 class GetGameDetailsUseCaseTests: XCTestCase {
     private var useCase: GetGameDetailsUseCase!

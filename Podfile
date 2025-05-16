@@ -12,6 +12,8 @@ target 'GamersHub' do
   target 'GamersHubTests' do
     inherit! :search_paths
     # Pods for testing
+use_frameworks!
+  pod 'Alamofire'
   end
 
   target 'GamesFoundation' do
