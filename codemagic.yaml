@@ -1,0 +1,42 @@
+
+workflows:
+  gamershub-debug: # workflow ID
+    name: GamersHub Debug # workflow name
+    environment:
+      xcode: latest
+      cocoapods: default
+      vars:
+        XCODE_PROJECT: "GamersHub.xcworkspace"
+        XCODE_SCHEME: "GamersHub"
+    scripts:
+      - name: Install CocoaPods Dependencies
+        script: |
+          if [ -f Podfile ]; then
+            gem install cocoapods -v "$(grep -oE 'cocoapods (~> )?([0-9.]+)' Podfile | sed -e 's/cocoapods (~> )?//')"
+            pod install --repo-update
+          fi
+      - name: Resolve SPM Dependencies
+        script: |
+          xcodebuild -resolvePackageDependencies -workspace "$XCODE_PROJECT" -scheme "$XCODE_SCHEME"
+      - name: Run tests
+        script: |
+          xcodebuild \
+          -workspace "$XCODE_PROJECT" \
+          -scheme "$XCODE_SCHEME" \
+          -sdk iphonesimulator \
+          -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=16.1' \
+          clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - name: Build debug app
+        script: |
+          xcodebuild build -workspace "$XCODE_PROJECT" \
+          -scheme "$XCODE_SCHEME" \
+          -configuration Debug \
+          -sdk iphonesimulator \
+          -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=16.1' \
+          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+    artifacts:
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/Products/Debug-iphonesimulator/*.app
+    publishing:
+      email:
+        recipients:
+          - singgihtulus@gmail.com
