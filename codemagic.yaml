@@ -24,16 +24,16 @@ workflows:
           -workspace "$XCODE_PROJECT" \
           -scheme "$XCODE_SCHEME" \
           -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=16.1' \
-          clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' \
+           clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Build debug app
         script: |
           xcodebuild build -workspace "$XCODE_PROJECT" \
           -scheme "$XCODE_SCHEME" \
           -configuration Debug \
           -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 12 Pro Max,OS=16.1' \
-          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+          -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' \
+           clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/Products/Debug-iphonesimulator/*.app
     publishing:
