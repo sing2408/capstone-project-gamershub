@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2429694E2DD50EDE00D1A079 /* CorePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2429694D2DD50EDE00D1A079 /* CorePackage */; };
+		24E5C7E72DCE0A2C0097C5F0 /* GamesFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E5C7DC2DCE0A2C0097C5F0 /* GamesFoundation.framework */; };
+		9408267A40ACDB484DC196F4 /* Pods_GamesFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB758C92460E1D3EA1E04542 /* Pods_GamesFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24E5C7E82DCE0A2C0097C5F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E5C7D32DCE0A2C0097C5F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24E5C7DB2DCE0A2C0097C5F0;
+			remoteInfo = GamesFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24B209562DD1E26900602C1A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B2095B2DD1E2C600602C1A /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C6AA102DCF5455009A0D66 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E5C7DC2DCE0A2C0097C5F0 /* GamesFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GamesFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E5C7E62DCE0A2C0097C5F0 /* GamesFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5822FECCFB05F2439F6FB94E /* Pods-GamesFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesFoundation.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-GamesFoundation/Pods-GamesFoundation.release.xcconfig"; sourceTree = "<group>"; };
+		CB758C92460E1D3EA1E04542 /* Pods_GamesFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GamesFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FBE6927AC296D364C4254F /* Pods-GamesFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesFoundation.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-GamesFoundation/Pods-GamesFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		24E5C7DE2DCE0A2C0097C5F0 /* GamesFoundation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GamesFoundation;
+			sourceTree = "<group>";
+		};
+		24E5C7EA2DCE0A2C0097C5F0 /* GamesFoundationTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GamesFoundationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24E5C7D92DCE0A2C0097C5F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2429694E2DD50EDE00D1A079 /* CorePackage in Frameworks */,
+				9408267A40ACDB484DC196F4 /* Pods_GamesFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24E5C7E32DCE0A2C0097C5F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E5C7E72DCE0A2C0097C5F0 /* GamesFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1308733A17ED73F6ACAC87DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7FBE6927AC296D364C4254F /* Pods-GamesFoundation.debug.xcconfig */,
+				5822FECCFB05F2439F6FB94E /* Pods-GamesFoundation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		24E5C7D22DCE0A2C0097C5F0 = {
+			isa = PBXGroup;
+			children = (
+				24E5C7DE2DCE0A2C0097C5F0 /* GamesFoundation */,
+				24E5C7EA2DCE0A2C0097C5F0 /* GamesFoundationTests */,
+				24E5C7DD2DCE0A2C0097C5F0 /* Products */,
+				DAB5EC5175A151A571A82131 /* Frameworks */,
+				1308733A17ED73F6ACAC87DA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		24E5C7DD2DCE0A2C0097C5F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24E5C7DC2DCE0A2C0097C5F0 /* GamesFoundation.framework */,
+				24E5C7E62DCE0A2C0097C5F0 /* GamesFoundationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB5EC5175A151A571A82131 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24B2095B2DD1E2C600602C1A /* Core.framework */,
+				24B209562DD1E26900602C1A /* Alamofire.framework */,
+				24C6AA102DCF5455009A0D66 /* Core.framework */,
+				CB758C92460E1D3EA1E04542 /* Pods_GamesFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24E5C7D72DCE0A2C0097C5F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24E5C7DB2DCE0A2C0097C5F0 /* GamesFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E5C7EF2DCE0A2C0097C5F0 /* Build configuration list for PBXNativeTarget "GamesFoundation" */;
+			buildPhases = (
+				53A7C8981F5677336B2EF218 /* [CP] Check Pods Manifest.lock */,
+				24E5C7D72DCE0A2C0097C5F0 /* Headers */,
+				24E5C7D82DCE0A2C0097C5F0 /* Sources */,
+				24E5C7D92DCE0A2C0097C5F0 /* Frameworks */,
+				24E5C7DA2DCE0A2C0097C5F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				24E5C7DE2DCE0A2C0097C5F0 /* GamesFoundation */,
+			);
+			name = GamesFoundation;
+			productName = GamesFoundation;
+			productReference = 24E5C7DC2DCE0A2C0097C5F0 /* GamesFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		24E5C7E52DCE0A2C0097C5F0 /* GamesFoundationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E5C7F42DCE0A2C0097C5F0 /* Build configuration list for PBXNativeTarget "GamesFoundationTests" */;
+			buildPhases = (
+				24E5C7E22DCE0A2C0097C5F0 /* Sources */,
+				24E5C7E32DCE0A2C0097C5F0 /* Frameworks */,
+				24E5C7E42DCE0A2C0097C5F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24E5C7E92DCE0A2C0097C5F0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				24E5C7EA2DCE0A2C0097C5F0 /* GamesFoundationTests */,
+			);
+			name = GamesFoundationTests;
+			productName = GamesFoundationTests;
+			productReference = 24E5C7E62DCE0A2C0097C5F0 /* GamesFoundationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24E5C7D32DCE0A2C0097C5F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					24E5C7DB2DCE0A2C0097C5F0 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					24E5C7E52DCE0A2C0097C5F0 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 24E5C7D62DCE0A2C0097C5F0 /* Build configuration list for PBXProject "GamesFoundation" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24E5C7D22DCE0A2C0097C5F0;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2429694C2DD50EDE00D1A079 /* XCRemoteSwiftPackageReference "modularization-core-package" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 24E5C7DD2DCE0A2C0097C5F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24E5C7DB2DCE0A2C0097C5F0 /* GamesFoundation */,
+				24E5C7E52DCE0A2C0097C5F0 /* GamesFoundationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24E5C7DA2DCE0A2C0097C5F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24E5C7E42DCE0A2C0097C5F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53A7C8981F5677336B2EF218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GamesFoundation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24E5C7D82DCE0A2C0097C5F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24E5C7E22DCE0A2C0097C5F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24E5C7E92DCE0A2C0097C5F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24E5C7DB2DCE0A2C0097C5F0 /* GamesFoundation */;
+			targetProxy = 24E5C7E82DCE0A2C0097C5F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24E5C7F02DCE0A2C0097C5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7FBE6927AC296D364C4254F /* Pods-GamesFoundation.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GamesFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24E5C7F12DCE0A2C0097C5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5822FECCFB05F2439F6FB94E /* Pods-GamesFoundation.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GamesFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24E5C7F22DCE0A2C0097C5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M6ZUY47J83;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24E5C7F32DCE0A2C0097C5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M6ZUY47J83;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24E5C7F52DCE0A2C0097C5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GamesFoundationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24E5C7F62DCE0A2C0097C5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GamesFoundationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E5C7D62DCE0A2C0097C5F0 /* Build configuration list for PBXProject "GamesFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E5C7F22DCE0A2C0097C5F0 /* Debug */,
+				24E5C7F32DCE0A2C0097C5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24E5C7EF2DCE0A2C0097C5F0 /* Build configuration list for PBXNativeTarget "GamesFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E5C7F02DCE0A2C0097C5F0 /* Debug */,
+				24E5C7F12DCE0A2C0097C5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24E5C7F42DCE0A2C0097C5F0 /* Build configuration list for PBXNativeTarget "GamesFoundationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E5C7F52DCE0A2C0097C5F0 /* Debug */,
+				24E5C7F62DCE0A2C0097C5F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2429694C2DD50EDE00D1A079 /* XCRemoteSwiftPackageReference "modularization-core-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sing2408/modularization-core-package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2429694D2DD50EDE00D1A079 /* CorePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2429694C2DD50EDE00D1A079 /* XCRemoteSwiftPackageReference "modularization-core-package" */;
+			productName = CorePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 24E5C7D32DCE0A2C0097C5F0 /* Project object */;
+}

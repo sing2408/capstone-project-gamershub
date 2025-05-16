@@ -1,0 +1,16 @@
+disabled_rules:
+- identifier_name
+- opening_brace
+- trailing_whitespace
+
+excluded:
+  - ${PWD}/Carthage
+  - ${PWD}/Pods
+  
+line_length:
+  warning: 200
+
+included:
+  - GamersHub/
+  - GamersHubUnitTests/
+

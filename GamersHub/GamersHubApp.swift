@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CorePackage
 
 @main
 struct GamersHubApp: App {
@@ -14,7 +15,6 @@ struct GamersHubApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, coreDataSetup.persistenceController.container.viewContext)
-                .environmentObject(HomeViewModelFactory.makeHomeViewModel())
         }
     }
 }
